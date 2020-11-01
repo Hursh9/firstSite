@@ -1,7 +1,41 @@
-.placeholder{
-    background-color: red;
+/* master styles */
+body {
+    margin: 0px;
 }
 
-.anotherClass{
-    background-color: lightseagreen;
+.nav-wrapper {
+    /* they are going to be next to each other */
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+/* traverse in a tree inside CSS */
+.nav-wrapper > .left-side > div{
+    margin-right: 20px; 
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+/* inside of the .nav-link-wrapper grab the a-link */
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+/* sudo state */
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
 }
