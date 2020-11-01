@@ -1,8 +1,13 @@
-/* master styles */
+/* Master styles */
 body {
     margin: 0px;
 }
-
+/* Nav Styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* use 1 fractional unit */
+}
 .nav-wrapper {
     /* they are going to be next to each other */
     display: flex;
@@ -39,3 +44,5 @@ body {
 .nav-link-wrapper a:hover{
     color: black;
 }
+
+/* Portfolio Styles */
